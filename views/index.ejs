@@ -1,0 +1,605 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+ 	<link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+ 	 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+	<link rel="stylesheet" href="animate.css">
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-31322196-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<title>Bill Coloe: User Experience Design Portfolio</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		h2 {
+			font-family: 'Open Sans', Helvetica, Arial;
+			font-size: 48px;
+			font-weight: 300;
+		}
+
+
+		/* AFL Section */
+		#afl-image {
+			background: url("aflcover3.jpg") no-repeat fixed;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 200px;
+			border: solid 0px green;
+		}
+		.afl-wrapper {
+			margin: auto;
+			width: 950px;
+			border: solid 0px red;
+			overflow-y: none;
+			overflow-x: none;
+			background-color: white;
+		}
+		.afl {
+			border: solid 0px green;
+			margin-bottom: 125px;
+			overflow: hidden;
+		}
+		.afl-description .left{
+			font-family: 'Noto Serif', Georgia, serif;
+			font-size: 17px;
+			width: 585px;
+			border: solid 0px #428ecd;
+			line-height: 200%;
+			font-weight: 500;
+		}
+		.afl-description blockquote {
+			color: #428ecd;
+		}
+		.afl-description span {
+			border-bottom: solid 3px rgba(66, 142, 205, 0.30);
+		}
+		#survey {
+			border: solid 0px green;
+			float: right;
+			width: 337px;
+		}
+		#aflpics {
+			float: right;
+			margin-top: 45px;
+		}
+		#mejenna {
+			margin-top: 70px;
+		}
+		.aflcaption {
+			margin-top: 30px;
+			float: left;
+			border-right: solid 0px blue;
+			width: 263px;
+			border-top: solid 5px #428ecd;
+			padding-top: 23px;
+			font-family: 'Noto Serif', Georgia, serif;
+			font-style: italic;
+			font-size: 15px;
+			color: rgb(69, 69, 69);
+		}
+		.aflslides {
+			margin-top: 30px;
+			width: 606px; 
+			padding: 0 0 15px 0;
+			border: solid 0px red;
+			float: right;
+		}
+
+
+		/* Mega Nokken Section */
+		.mn-wrapper {
+			margin: 0 auto;
+			width: 950px;
+			border: solid 0px red;
+			overflow-y: none;
+			overflow-x: none;
+			background-color: #eaeaea;
+		}
+		.mega-nokken {
+			float: left;
+			margin-bottom: 125px;
+			border: solid 0px yellow;
+		}
+		.pictures-right {
+			float: right;
+		}
+		#timer {
+			margin-top: 30px;
+		}
+		#timer figcaption {
+			width: 390px;
+		}
+		#mega-nokken-image {
+			background: url("meganokkencover.jpg") no-repeat top center fixed;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 200px;
+		}
+		figure {
+			border: solid 0px green;
+			margin-top: -0px;
+			margin-right: 0;
+		}
+		figcaption {
+			font-family: 'Noto Serif', Georgia, serif;
+			font-style: italic;
+			font-size: 15px;
+			color: rgb(69, 69, 69);
+			width: 333px;
+			border: solid 0px red;
+			margin-top: 10px;
+		}
+		.mega-nokken-description .left{
+			font-family: 'Noto Serif', Georgia, serif;
+			font-size: 17px;
+			width: 585px;
+			border: solid 0px #f2f2f2;
+			line-height: 200%;
+			font-weight: 500;
+		}
+		blockquote {
+			font-size: 28px;
+			color: #875ffd;
+			font-style: italic;
+			font-weight: 400;
+		}
+		.meganokkencaption {
+			margin-top: 30px;
+			float: left;
+			border-right: solid 0px blue;
+			width: 263px;
+			border-top: solid 5px #875ffd;
+			padding-top: 23px;
+			font-family: 'Noto Serif', Georgia, serif;
+			font-style: italic;
+			font-size: 15px;
+			color: rgb(69, 69, 69);
+		}
+		.meganokkenslides {
+			margin-top: 30px;
+			width: 606px; 
+			padding: 0 0 15px 0;
+			border: solid 0px red;
+			float: right;
+		}
+		.mega-nokken span {
+			border-bottom: solid 3px rgba(135, 95, 253, 0.30);
+		}
+		#mnpics {
+			float: right;
+		}
+		#mnoldinterface {
+			margin-top: 95px;
+		}
+
+
+		/*Schmelfberry Section */
+		#schmelfberry-image {
+			background: url("schmelfberrycover.jpg") no-repeat center fixed;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 200px;
+		}
+		.schmelfberry {
+			overflow: hidden;
+			margin-bottom: 125px;
+		}
+		.schmelfberry span {
+			border-bottom: solid 3px rgba(19, 181, 96, 0.30);
+		}
+		.schmelfberry-wrapper {
+			margin: auto;
+			width: 950px;
+			border: solid 0px red;
+			overflow-y: none;
+			overflow-x: none;
+			background-color: white;
+		}
+		.schmelfberry-description .left{
+			font-family: 'Noto Serif', Georgia, serif;
+			font-size: 17px;
+			width: 585px;
+			border: solid 0px #428ecd;
+			line-height: 200%;
+			font-weight: 500;
+		}
+		.schmelfberry-description blockquote {
+			color: #13b560;
+		}
+		#schmelfberrypics {
+			float: right;
+			width: 337px;
+		}
+		.schmelfberrycaption {
+			margin-top: 30px;
+			float: left;
+			border-right: solid 0px blue;
+			width: 263px;
+			border-top: solid 5px #13b560;
+			padding-top: 23px;
+			font-family: 'Noto Serif', Georgia, serif;
+			font-style: italic;
+			font-size: 15px;
+			color: rgb(69, 69, 69);
+		}
+		.schmelfberryslides {
+			margin-top: 30px;
+			width: 606px; 
+			padding: 0 0 15px 0;
+			border: solid 0px red;
+			float: right;
+		}
+
+
+		/* Footer Style */
+		.footer-wrapper {
+			margin-top: 20px;
+			text-align: center;
+		}
+		#backtotop a {
+			text-decoration: none;
+			color: black;
+			font-family: 'Open Sans', Helvetica, Arial;
+			padding-bottom: 20px;
+		}
+
+
+		/* First Page Style */
+		body, html {
+		    height: 100%;
+		}
+		.firstpage-wrapper {
+			height: 100%;
+		}
+		.navigation {
+			font-family: 'Open Sans', Helvetica, Arial;
+			width: 950px;
+			position: relative;
+			margin-right: auto;		
+			margin-left: auto;
+			border: solid 0px red;
+		}
+		ul {
+			padding-left: 0;
+		}
+		.navigation a {
+			color: gray;
+			text-decoration: none;
+		}
+		#anchor1:hover {
+			border-bottom: solid 2px #428ecd;
+		}
+		#anchor2:hover {
+			border-bottom: solid 2px #875ffd;
+		}
+		#anchor3:hover {
+			border-bottom: solid 2px #13b560;
+		}
+		#contact {
+			color: black;
+			padding-left: 120px;
+		}
+		#contact:hover {
+			text-decoration: underline;
+		}
+		.navigation li {
+			display: inline;
+			margin-right: 20px;
+			padding-left: 0;
+		}
+		#first a {
+			font-weight: bold;
+			color: black;
+		}
+		hr {
+		    border: 0;
+		    height: 1px;
+		    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		}
+		.titlewrapper {
+			height: 40%;
+			width: 950px;
+			border: solid 0px green;
+			position: relative;
+			margin: 0 auto;
+		}
+		#titletext1 {
+			border: solid 0px red;
+			position: absolute; bottom: 0; left: 0;
+			font-family: 'Oswald', Helvetica, Arial;
+			font-size: 45px;
+		}
+		#titletext2 {
+			border: solid 0px purple;
+			position: absolute; bottom: 0; left: 0;
+			font-family: 'Oswald', Helvetica, Arial;
+			font-size: 45px;
+			margin-left: 250px;
+			color: #428ecd;
+		}
+		.titletextcolor { /* Must be added after animation ends */
+			/* Color Animation */
+			color: #428ecd;
+			animation:myfirst 2.7s;
+			-moz-animation:myfirst 2.9s infinite; /* Firefox */
+			-webkit-animation:myfirst 2.9s infinite; /* Safari and Chrome */
+		}
+		 @-moz-keyframes myfirst /* Firefox */
+		{
+			25%   {color: #428ecd;}
+			50%  {color: #875ffd;}
+			75%   {color: #13b560;}
+			100%   {color: #428ecd;}
+		}
+		@-webkit-keyframes myfirst /* Firefox */
+		{
+			25%   {color: #428ecd;}
+			50%  {color: #875ffd;}
+			75%   {color: #13b560;}
+			100%   {color: #428ecd;}
+		}
+		h1 {
+			font-family: 'Open Sans', Helvetica, Arial;
+			font-size: 21px;
+		}
+	</style>
+</head>
+<body>
+	<div class="firstpage-wrapper">
+		<ul class="navigation">
+			<li id="first"><a name="myAnchor4" id="myAnchor4" href="#">Bill Coloe</a></li>
+			<li><a href="#myAnchor" rel="" id="anchor1" class="anchorLink">[Online Companionship]</a></li>
+			<li><a href="#myAnchor2" rel="" id="anchor2" class="anchorLink">[Real-Time Trivia]</a></li>
+			<li><a href="#myAnchor3" rel="" id="anchor3" class="anchorLink">[Webcomic Architecture]</a></li>
+			<li><a id="contact" href="mailto:wcoloe@gmail.com">Contact</a></li>
+		</ul>
+		<hr>
+		<div class="titlewrapper">
+			<div id="titletext1">
+				INFLUENCING
+			</div>
+			<div id="titletext2">
+				PERCEPTION
+			</div>
+		</div>
+		<div class="titlewrapper">
+			<h1>Bill Coloe: User Experience Design Portfolio</h1>
+		</div>
+	</div> <!-- End of Firstpage Wrapper -->
+
+	<div id="afl-image">
+	</div>
+	<div class="afl-wrapper">
+		<section class="afl">
+			<h2><a name="myAnchor" id="myAnchor">Finding a solution for companionship within an online community of age 50+ users.</a></h2>
+
+			<div class="afl-description">
+				<figure class="pictures-right">
+					<img src="aflicon.jpg">
+					<figcaption>AfterFiftyLiving is a Web-based social community and resource for baby boomers and others over 50 years of age. </figcaption>
+				</figure>
+
+				<p class="left">AfterFiftyLiving.com (AFL) is a social Web community for people over the age of fifty.  The site features articles, advice, polls, forums, blogs, and other engaging elements for this demographic.  As one of their major segments, the Companionship section offered articles, sexual health advice, polls, and a matching service called "Find A Companion."</p>
+
+				<p class="left">Their existing matching service was a managed solution by World Dating Partners, a third party software provider. AFL wanted to replace that service with a more attractive and effective solution. Amongst many issues, AFL was primarily <span>concerned with their community members attitudes and feelings towards their matching service</span> and contracted myself and a team member to assist in determining a solution for finding companionship for their community.</p>
+
+				<blockquote>The over-50 demographic has a much different perception of online matchmaking than today's 20 and 30 year olds. For many, there is a lot of apprehension and mistrust involved.</blockquote>
+
+				<aside id="survey">
+					<figure class="pictures-right">
+						<img src="aflwebsite2.jpg">
+					</figure>
+
+					<figure class="pictures-right">
+						<img src="survey2.jpg">
+						<figcaption>Using the expertise of AFL's current "Love 'n Life" columnist and matchmaker, we developed a survey to understand AFL member's opinions on online dating.</figcaption>
+					</figure>
+				</aside>
+
+				<p class="left">We began by first analyzing the current system and its shortcomings. Among the first of many problems, we discovered that the interface was confusing and difficult to use. We also noticed a <span>multitude of fake profiles flooding the site and even received unauthorized mailings</span> to our inboxes. We immediately abandoned any efforts to patch the World Dating Partner platform and focused our efforts on considering a different solution.</p>
+
+				<p class="left">To understand the needs of our demographic, we developed survey with the help of AFL's "Love 'n Life" section author. We found that the overwhelming majority of members had a negative view of online dating services. Statements like "the problem with all cyber-dating is the lying on one side or another so there's no doubt married men troll these things." were prevalent. Among the chief concerns were <span>fears of identity theft/security, lack of user authenticity, and difficulty of system use.</span>  Additionally, members generally placed a higher emphasis on <span>"companionship" rather than the notion "dating"</span> which many of the current matchmaking services were focusing on.</p>
+
+				<blockquote>"It's not about each other's likes or interests. I have found that most of the time members will go for the picture and never even read the profile." -AFL Survey Participant</blockquote>
+
+				<aside id="aflpics">
+					<figure id="aflbadsite">
+						<img src="wdp.jpg">
+						<figcaption>The current matchmaking service managed by a third party managed solution left a lot to be desired when it was first integrated into the AFL website.</figcaption>
+					</figure>
+
+					<figure id="mejenna">
+						<img src="mejenna.jpg">
+						<figcaption>This engagement was part of a capstone course for an IT Master's Program. Shown above is consulting partner, Jenna, and myself after our final presentation.</figcaption>
+					</figure>
+				</aside>
+
+				<p class="left">Although, our initial plan was to determine new requirements for a replacement online dating service, <span>our results showed that this was not necessarily the best direction.</span> We thought about other ways AFL's customers would be able to find companionship using the site and determined that <span>empowering people to use the skills necessary to find companionship in their everyday lives</span> would be the most effective way to achieve this goal.</p>
+
+				<p class="left">Our proposed solution consisted of an online training course created for those looking for companionship in the real world. The course features video lessons, tutorials, and workshops involving conversation techniques, situational ice-breakers, and motivational lessons designed to enhance the trainee's social skills as a means of finding companionship.  After completion of the course, the trainee will have created <span>the skills and knowledge needed to increase their confidence in finding a suitable companion.</span> Based on our feedback, the couse will remedy many of the issues stated by the AFL user community including the difficulties involved in creating a large enough pool of members within more remote geographical areas.</p>
+					
+				<p class="left">AFL's CEO stated that our "recommendation for new directions and products, which was beyond contract requirements, <span>was creative, insightful and greatly appreciated!</span>" With such an active and participatory user community, we believe AFL will be able to create a truly unique and valuable offering to their customers looking for companionship.</p>
+			</div>
+			<div style="clear: both"></div>
+
+			<div class="aflcaption">
+				<aside>Although AFL's leadership was initially interested in simply replacing their current onine dating service, our analysis showed there could be a much more effective solution they could offer their customers instead.<br><br>To the right is a wireframe of the proposed "Find A Companion" Course.</aside>
+			</div>
+			<div class="aflslides">
+				<div><img src="afl-wireframe1.jpg"></div>
+				<div><img src="afl-wireframe2.jpg"></div>
+			    <div><img src="afl-wireframe3.jpg"></div>
+			</div>
+		</section>
+	</div> <!-- End of AFL Wrapper -->
+	<div id="mega-nokken-image">
+	</div>
+	<div class="mn-wrapper">
+		<section class="mega-nokken">
+
+			<h2><a name="myAnchor2" id="myAnchor2">Improving the usability of a real-time trivia application</a></h2>
+			<div class="mega-nokken-description">
+
+				<aside id="mnpics">
+					<figure id="mnintro">
+						<img src="mnintro2.jpg">
+						<figcaption>Mega Nokken - the "Live Trivia Colosseum" registration page.</figcaption>
+					</figure>
+
+					<figure id="mnoldinterface">
+						<img src="oldinterface2.jpg">
+						<figcaption>The prototype application had a very basic interface but enough to allow the user fully functionality of the game.</figcaption>
+					</figure>
+				</aside>
+
+				<p class="left">Inspired by the 2009 Xbox 360 video game, "1 vs 100," Mega Nokken was created as a live online trivia game in which an unlimited number of players could compete simultaneously to answer multiple choice questions to win weekly prizes. A usability test was conducted on a prototype in order to <span>understand the behaviors of users </span>to uncover the potential usability issues and to gather ideas for the improvement of the application's behavior and interface.</p>
+
+				<p class="left">A prototype was created, however, the application required a deep analysis of the <span>unique interactions that occur during the real-time transmissions of shared data.</span> The experience I wanted to create was one in which players feel like they are immersed in a live gameshow and that <span>their experience would feel very much "alive."</span></p>
+			
+				<!-- <blockquote>Garnering feedback from a large number of users would be essential in determining the overall sentiment.</blockquote> -->
+
+				<p class="left">A moderated remote usability test discovered that while players were able to successfully complete the tasks necessary to play, they were having trouble providing an answer within the allotted time for each question. Since there is no extra penalty for guessing, <span>it was evident that time awareness needed to be improved.</span> Anecdotal feedback also included feelings of "data overload" when it came to displaying the large number of usernames and scores on screen.</p>
+
+				<blockquote>Players also wanted a way to see how well they were doing relative to their competition but not feel overwhelmed by the large list of users.</blockquote>				
+				<figure class="pictures-right" id="timer">
+					<img src="timer.jpg">
+					<figcaption>This brightly colored, horizontal "visual timer" became more noticeable and easier to gauge while concentrating on a question.</figcaption>
+				</figure>
+
+				<p class="left">Based on these insights, <span>several key improvement were made to the application.</span> The simple numerical countdown timer was changed to a progress bar-style timer. The format of the score panel was also simplified to display only a summary of the top ten players by rank, while each player was represented by a small circle in a "Users Playing" panel. This format <span>allowed for a much larger amount of user information to be displayed on the main screen</span> without overwhelming the interface.</p>
+
+				<p class="left">To further add to the "live" feeling, several scheduled intermissions were set to occur within the game session. During an intermission, the main question/answer panel was minimized and a live feed video was shown with a live host who would provide playful banter and promote paid messages.</p>
+
+				<blockquote>A dramatic increase in user satisfaction resulted from testing the application a second time.</blockquote>
+
+				<p class="left">The amount of unanswered questions decreased markedly and overall gameplay satisfaction increased based on user statements, specifically the <span>feeling of being "deeply involved an immersive gameplay experience."</span> The data gathered from the initial usability test was paramount in improving the overall user experience in the game.</p>
+			</div>
+			<div style="clear: both"></div>
+
+			<div class="meganokkencaption">
+				<aside>Mega Nokken is a real-time, multiplayer trivia game built using Node.js and the Socket.io library. It can support thousands of users simultaneously through the use of websockets.</aside>
+			</div>
+
+			<div class="meganokkenslides">
+				<div><img src="mninterface.jpg"></div>
+				<div><img src="mnquestion.gif"></div>
+			    <div><img src="playerpanel.gif"></div>
+				<div><img src="studio.jpg"></div>
+			    <div><img src="1vs100.jpg"></div>
+			</div>
+		</section>
+	</div> <!-- End of MN Wrapper --> 
+	<div style="clear: both"></div>
+	<div style="clear: both"></div>
+	<div id="schmelfberry-image">
+	</div>
+	<div class="schmelfberry-wrapper">
+		<section class="schmelfberry">
+			<h2><a name="myAnchor3" id="myAnchor3">Optimizing a webcomic layout to increase user engagement.</a></h2>
+			<div class="schmelfberry-description">
+
+				<figure class="pictures-right">
+					<img src="schmelfberrywebsite.jpg">
+					<figcaption>Schmelfberry is my attempt at a drawing webcomics.</figcaption>
+				</figure>
+
+				<p class="left">In March of 2014, I launched a webcomic pilot called "Schmelfberry."  I'm certainly not the greatest illustrator but I know enough to create something at least halfway decent. While my initial idea was to simply capture some of my everyday thoughts in cartoons, the creation and continuous improvement of this webpage has <span>revealed some valuable lessons in user experience design.</span></p>
+					
+				<p class="left">What I underestimated, however, is <span>how much time it actually takes to actually draw webcomics.</span> By the time I created enough to launch a website, my creative skills were burnt out. I had focused so much on creating a large quantity of content that I neglected to provide the project with a proper framework. As marketing guru, Seth Godin states "'How should I judge this,'' is something we ask ourselves all the time. <span>When you make the effort to give us a hint, we'll often take the hint."</span></p>
+
+				<p class="left">At first, I had considered using a simple Wordpress template to  display each comic but they were primarily optimized to show horizontal-style comics. Most of my initial comics we designed to be read from top to bottom, not left to right. So I created the site from scratch.</p>
+				<blockquote>"The wrapper isn't everything, it might not even be the point. But it matters." -Seth Godin</blockquote>
+
+				<aside id="schmelfberrypics">
+					<figure class="pictures-right">
+						<img src="oldschmelfberry.jpg">
+						<figcaption>The first iteration has a slew of problems including poor navigation between comics and a logo that took up too much space away from the featured comic.</figcaption>
+					</figure>
+				</aside>
+
+				<p class="left">The initial site architecture was admittedly, poorly thought-out. The index would display the latest comic, and left and right arrows were placed at the top so that users could browse through each comic. The problem with this approach was that every time a current comic page was shared, the index link would only point to that comic for as long as the comic wasn't changed to a new one. This resulted in a lot of confusion on social media sites.</p>
+
+				<p class="left">In planning the revamped site, I knew there was a lot that could be improved. The first major improvement was that the homepage would function as a better gateway to the collection and displayed a thumbnail preview of each comic. I learned how to use PHP "includes" to template the site which made it <span>far more manageable to make universal changes.</span> I also concentrated my efforts in increasing the overall quality of the comics thanks to the abundance of free Adobe Illustrator YouTube lessons.</p>
+
+				<blockquote>The amount of entertaining content of the Web is frighteningly large. Your audience has so many options, so you really only have milliseconds to capture their interest.</blockquote>
+
+				<figure class="pictures-right">
+					<img src="schmelfberrylogos.jpg">
+					<figcaption>As part of the revamp, the logo was changed to include more vivid and complementary colors.</figcaption>
+				</figure>
+
+				<p class="left">To increase user engagement, I manufactured my own JQuery solution to display 3 random thumbnail links at the bottom of each comic page. This was an effective manuever that led to significantly more pageviews per session. Additionally, a social sharing widget was placed between the main comic and the 3 randomly displayed comics. <span>Sharing the page is the primary action I would like the user to take</span> so this placement was extremely necessary.</p>
+
+				<p class="left">Lastly, the colors were changed to a more vivid pink and green hue and the new layout allowed more of each comic to be displayed near the top. Overall, a larger, concerted effort on creating the proper framework for my content alongside <span>a focused plan to implement the ability for desired user actions</span> greatly improved the site's goals.</p>
+			</div>
+			<div style="clear: both"></div>
+
+			<div class="schmelfberrycaption">
+				<aside>An iterative approach the Schmelfberry website design was key in influencing the perceptions and behaviors of the site's visitors. The latest iteration led to a richer, more integrated experience for my audience.</aside>
+			</div>
+			<div class="schmelfberryslides">
+				<div><img src="jquerysolution.jpg"></div>
+				<div><img src="flowchart.jpg"></div>
+				<div><img src="beforephp.jpg"></div>
+			    <div><img src="afterphp.jpg"></div>
+			</div>
+		</section>
+	</div> <!-- End of Schmelfberry Wrapper -->
+	<hr style="width: 950px; border-color: #dedede">
+	<div class="footer-wrapper">
+		<div id="backtotop">
+			<a href="#myAnchor4" rel="" id="anchor4" class="topLink">BACK TO TOP</a>
+		</div>
+	</div>
+	<script>
+        $(document).ready(function(){
+		  $('.meganokkenslides, .aflslides, .schmelfberryslides').slick({
+	  		 arrows: false,
+	         dots: true,
+	         infinite: true,
+	         speed: 300,
+	         slidesToShow: 1,
+	         slidesToScroll: 1
+		  });
+
+		  $('.anchorLink').click(function(){
+   			$('html, body').animate({
+        		scrollTop: $( $(this).attr('href') ).offset().top
+    		}, 1200);
+   			 return false;
+		  });
+		  $('.topLink').click(function(){
+   			$('html, body').animate({
+        		scrollTop: 0
+    		}, 1200);
+   			 return false;
+		  });
+		  
+		  $('#titletext2').addClass('animated rollIn');
+		  $('#titletext2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		  		$(this).removeClass('animated rollIn');
+		  		$(this).addClass('titletextcolor');
+			});
+        });
+    </script>
+</body>
+</htmL>
+
